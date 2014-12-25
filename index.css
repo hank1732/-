@@ -1,0 +1,90 @@
+/*CSS debug*/
+html,body{	
+	height: 100%;
+	/*background: #00FFFF;*/
+}
+/*CSS debug*/
+body{
+	font-size: 12px;
+}
+body,ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+.filter-section{
+	position: relative;
+	z-index: 550;
+	padding: 5px;
+	height: 75%;
+}
+.filter-menu{
+	display:-moz-box; /* Firefox */
+	display:-webkit-box; /* Safari and Chrome */
+	display:box;
+	width: 100%;
+	margin: 0;
+	background: white;
+}
+.filter-menu li{
+	font-size: 1rem;
+	display: block;
+	-moz-box-flex:1.0; /* Firefox */
+	-webkit-box-flex:1.0; /* Safari and Chrome */
+	box-flex:1.0;
+	border:1px solid black;
+	text-align: center;
+}
+.filter-menu li::selection{
+	background:none;
+}
+.filter-menu li::-moz-selection{
+	background:none;
+}
+.filter-menu li:after{
+	content: "";
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border-top: 0.5rem solid #B7B7B7;
+	border-left: 0.5rem solid transparent;
+	border-right: 0.5rem solid transparent;
+	border-bottom: 0;
+	margin-left: 0.5rem;
+}
+.filter-menu li.active:after{
+	content: "";
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border-top: 0;
+	border-left: 0.5rem solid transparent;
+	border-right: 0.5rem solid transparent;
+	border-bottom: 0.5rem solid #2bb2a3;	
+	margin-left: 0.5rem;
+}
+#itemPanel{
+	height: 100%;
+	display:-moz-box; /* Firefox */
+	display:-webkit-box; /* Safari and Chrome */
+	display:box;
+	width: 100%;
+	margin: 0;
+}
+#itemPanel .item-menu{
+	height: 100%;
+	background: rgb(239, 239, 239);
+	-moz-box-flex:1.0; /* Firefox */
+	-webkit-box-flex:1.0; /* Safari and Chrome */
+	box-flex:1.0;
+}
+#itemPanel .item-menu li{	
+	padding: 5px 0;
+	border-bottom: #dedede solid 1px;
+}
+#itemPanel .item-level1{	
+	width: 30%;
+	background: white;
+}
