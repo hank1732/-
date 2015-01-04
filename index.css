@@ -3,7 +3,8 @@ html,body{
 	height: 100%;
 	/*background: #00FFFF;*/
 }
-/*CSS debug*/
+/*over--CSS debug*/
+/*CSS reset*/
 body{
 	font-size: 12px;
 }
@@ -14,11 +15,12 @@ body,ul{
 li{
 	list-style: none;
 }
+/*over--CSS reset*/
 .filter-section{
 	position: relative;
 	z-index: 550;
 	padding: 5px;
-	height: 75%;
+	/*height: 75%;*/
 }
 .filter-menu{
 	display:-moz-box; /* Firefox */
